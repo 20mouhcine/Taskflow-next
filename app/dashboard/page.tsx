@@ -14,7 +14,7 @@ export default async function DashboardPage() {
       <p>{projects.length} projets</p>
       <AddProjectForm />
       <ul>
-        {projects.map(p => (
+        {projects.map((p: any) => (
           <li key={p.id} style={{
             display: 'flex', gap: 8, alignItems: 'center',
             marginBottom: 8
